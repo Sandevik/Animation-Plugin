@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import type { BoxHeight } from "../components/Animation";
+import type { BoxHeight } from "./Animation";
 
 export const useAnimation = (boxHeight: BoxHeight) => {
     const[inView, setInView] = useState<boolean>(false);
