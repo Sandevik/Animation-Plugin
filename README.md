@@ -6,10 +6,11 @@ Currenty accepting two props:
   - boxHeight: number, the height of the animation box in pixels
 
 Simply import the project and use like following example:
-'
-import Animation from "../components/Animation";
 
+import Animation from "../components/Animation";
+<pre>
 <Animation animationType={"slideFromLeft"} boxHeight={500}>
      <div className={style.slideIn}>from Left</div>
 </Animation>
-'
+
+</pre>
