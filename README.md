@@ -22,4 +22,4 @@ import Animation from "../components/Animation";
 </Animation>
 
 ```
-Everything within the Animation tags will be animated
+Everything within the ```html <Animation> ``` tags will be animated
