@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import type { BoxHeight } from "./Animation";
 
-export const useAnimation = (boxHeight: BoxHeight) => {
+export const useAnimation = (boxHeight?: BoxHeight) => {
     const[inView, setInView] = useState<boolean>(false);
     const[randId, setRandId] = useState<number>(0);
     function isElementInViewport(el: Element | null) {
