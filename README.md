@@ -12,7 +12,8 @@ import Animation from "../components/Animation";
 ```html
 
 <Animation animationType={"slideFromLeft"} boxHeight={500}>
-     <div className={style.slideIn}>from Left</div>
+     <div>from Left</div>
 </Animation>
 
 ```
+Everything within the Animation tags will be animated
