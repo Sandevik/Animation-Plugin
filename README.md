@@ -8,9 +8,11 @@ Currenty accepting two props:
 Simply import the project and use like following example:
 
 import Animation from "../components/Animation";
+```html
 <pre>
 <Animation animationType={"slideFromLeft"} boxHeight={500}>
      <div className={style.slideIn}>from Left</div>
 </Animation>
 
 </pre>
+```
