@@ -1,0 +1,25 @@
+.animationBox{
+    height: var(--Height);
+    width:100%;
+    overflow-x: hidden;
+    background-color: inherit;
+    color: inherit;
+}
+.animationBox[data-animate][data-animation="slideFromLeft"]{
+    transform: translateX(-100vw);
+    opacity: 0;
+    transition: transform 1.5s ease-in-out, opacity 1.5s;
+}
+.animationBox[data-animate][data-animation="slideFromRight"]{
+    transform: translateX(100vw);
+    opacity: 0;
+    transition: transform 1.5s ease-in-out, opacity 1.5s;
+}
+.animationBox[data-animate][data-animation="fadeIn"]{
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+.animationBox[data-animate].inView, .animationBox[data-animate][data-animation="fadeIn"].inView{
+    transform: translateX(0px);
+    opacity: 1;
+}
