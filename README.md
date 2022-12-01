@@ -5,7 +5,7 @@ Currenty accepting two props:
        -  slideFromLeft
        -  slideFromRight
        -  fadeIn
-  - ```boxHeight: number | undefined``` , the height of the animation box in pixels if left undefined height will be 200px
+  - ```boxHeight: number | undefined``` , the height of the animation box in pixels, if left undefined height will be 200px
 
 Simply import the project and use like following example:
 
