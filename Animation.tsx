@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useAnimation } from "../hooks/useAnimation";
+import { useAnimation } from "./useAnimation";
 import style from "./AnimationComponent.module.css";
 
 type AnimationType = "slideFromLeft" | "slideFromRight" | "fadeIn";
