@@ -6,13 +6,14 @@ type AnimationType = "slideFromLeft" | "slideFromRight" | "fadeIn";
 export type BoxHeight = number | undefined;
 
 interface AnimationProps {
-    children: React.ReactNode;
-    animationType: AnimationType;
-    boxHeight?: BoxHeight;
+  children: React.ReactNode;
+  animationType: AnimationType;
+  boxHeight?: BoxHeight;
+  delay?: number;
 }
 
-export default function Animation({children, animationType, boxHeight}: AnimationProps) {
-    const {inView, randId} = useAnimation(boxHeight);
+export default function Animation({children, animationType, boxHeight, delay}: AnimationProps) {
+    const {inView, randId} = useAnimation({boxHeight, delay});
 
   return (
     <div className={style.wrapper}>
@@ -26,4 +27,3 @@ export default function Animation({children, animationType, boxHeight}: Animatio
     </div>
   )
 }
-
