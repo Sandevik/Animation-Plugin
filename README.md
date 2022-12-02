@@ -10,9 +10,10 @@ Currenty accepting two props:
 
 Simply import the project and use like following example:
 
+```html
+
 import Animation from "../components/Animation";
 
-```html
 
 <Animation animationType={"slideFromLeft"} boxHeight={500} delay={1000}>
      <div>from Left</div>
