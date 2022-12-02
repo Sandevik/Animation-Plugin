@@ -6,6 +6,7 @@ Currenty accepting two props:
        -  slideFromRight
        -  fadeIn
   - ```boxHeight: number | undefined``` , the height of the animation box in pixels, if left undefined height will be 200px
+  -  - ```delay: number | undefined```, the delay for the animation to begin in milliseconds
 
 Simply import the project and use like following example:
 
@@ -13,7 +14,7 @@ import Animation from "../components/Animation";
 
 ```html
 
-<Animation animationType={"slideFromLeft"} boxHeight={500}>
+<Animation animationType={"slideFromLeft"} boxHeight={500} delay={1000}>
      <div>from Left</div>
 </Animation>
 
