@@ -12,22 +12,18 @@
 .animationBox[data-animate][data-animation="slideFromLeft"]{
     transform: translateX(-100vw);
     opacity: 0;
-    transition: transform 1.5s ease-in-out, opacity 1.5s;
-    
+    transition: transform var(--Duration) ease-in-out, opacity var(--Duration);
 }
 .animationBox[data-animate][data-animation="slideFromRight"]{
     transform: translateX(100vw);
     opacity: 0;
-    transition: transform 1.5s ease-in-out, opacity 1.5s;
-    
+    transition: transform var(--Duration) ease-in-out, opacity var(--Duration);
 }
 .animationBox[data-animate][data-animation="fadeIn"]{
     opacity: 0;
-    transition: opacity 1.5s ease-out;
-    
+    transition: opacity var(--Duration) ease-out;
 }
 .animationBox[data-animate].inView, .animationBox[data-animate][data-animation="fadeIn"].inView{
     transform: translateX(0px);
     opacity: 1;
-    
 }
