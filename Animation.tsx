@@ -15,12 +15,15 @@ export default function Animation({children, animationType, boxHeight}: Animatio
     const {inView, randId} = useAnimation(boxHeight);
 
   return (
-    <div
+    <div className={style.wrapper}>
+      <div
       data-animate={randId}
       data-animation={animationType}
       className={ inView ? `${style.animationBox} ${style.inView}` : style.animationBox}
       >
       {children}
     </div>
+    </div>
   )
 }
+
