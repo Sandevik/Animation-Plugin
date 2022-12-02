@@ -1,5 +1,8 @@
+.wrapper{
+    overflow-x: hidden;
+}
 .animationBox{
-    height: var(--Height);
+    height: 20em;
     width:100%;
     overflow-x: hidden;
     background-color: inherit;
@@ -17,9 +20,9 @@
 }
 .animationBox[data-animate][data-animation="fadeIn"]{
     opacity: 0;
-    transition: opacity 1.5s ease-in-out;
+    transition: opacity 1.5s ease-out;
 }
 .animationBox[data-animate].inView, .animationBox[data-animate][data-animation="fadeIn"].inView{
     transform: translateX(0px);
-    opacity: 1;
+    opacity: 1;   
 }
