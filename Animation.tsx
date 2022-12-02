@@ -10,10 +10,11 @@ interface AnimationProps {
   animationType: AnimationType;
   boxHeight?: BoxHeight;
   delay?: number;
+  duration?: number;
 }
 
-export default function Animation({children, animationType, boxHeight, delay}: AnimationProps) {
-    const {inView, randId} = useAnimation({boxHeight, delay});
+export default function Animation({children, animationType, boxHeight, delay, duration}: AnimationProps) {
+    const {inView, randId} = useAnimation({boxHeight, delay, duration});
 
   return (
     <div className={style.wrapper}>
