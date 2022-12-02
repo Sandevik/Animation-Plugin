@@ -7,8 +7,8 @@ Currenty accepting these props:
        -  slideFromRight
        -  fadeIn
   - ```boxHeight: number | undefined``` , the height of the animation box in pixels, if left undefined height will be 200px
-  - ```delay: number | undefined```, the delay for the animation to begin in milliseconds
-  - ```duration: number | undefined```, the duration of the animation in seconds
+  - ```delay: number | undefined```, the delay for the animation to begin in milliseconds, if left undefined delay will be 0
+  - ```duration: number | undefined```, the duration of the animation in seconds, if left undefined duration will be 1 second
 
 Simply import the project and use like following example:
 
