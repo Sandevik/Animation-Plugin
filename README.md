@@ -1,7 +1,8 @@
 # Animation-Plugin
 A basic animation plugin I built in React with TypeScript
-Currenty accepting two props:
-  - ```animationType: string```, how the animation looks (slides in from sides or fades in), Possible values:
+Currenty accepting these props:
+  - ```animationType: string``` (Required), how the object animates, 
+  Possible values:
        -  slideFromLeft
        -  slideFromRight
        -  fadeIn
