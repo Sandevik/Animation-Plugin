@@ -1,6 +1,6 @@
 .wrapper{
     overflow-x: hidden;
-    height: var(--Height);
+    min-height: var(--Height);
 }
 .animationBox{
     height: 100%;
