@@ -37,7 +37,7 @@ export const useAnimation = ({boxHeight, delay}: AnimationProps) => {
         };
         window.addEventListener("scroll", scrollHandler);
         return () => window.removeEventListener("scroll", scrollHandler);
-    },[inView, randId])
+    },[inView, randId, boxHeight])
 
     return {inView, randId}
 }
