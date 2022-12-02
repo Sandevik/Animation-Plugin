@@ -4,9 +4,10 @@ import type { BoxHeight } from "./Animation";
 interface AnimationProps{
     boxHeight?: BoxHeight;
     delay?: number | undefined;
+    duration?: number | undefined;
 }
 
-export const useAnimation = ({boxHeight, delay}: AnimationProps) => {
+export const useAnimation = ({boxHeight, delay, duration}: AnimationProps) => {
     const[inView, setInView] = useState<boolean>(false);
     const[randId, setRandId] = useState<number>(0);
     function isElementInViewport(el: Element | null) {
@@ -26,6 +27,7 @@ export const useAnimation = ({boxHeight, delay}: AnimationProps) => {
     useEffect(()=>{
         const animate = document.querySelector(`[data-animate="${randId}"]`) as HTMLElement | null;
         animate?.parentElement?.style.setProperty("--Height", `${boxHeight ? boxHeight : "200"}px`);
+        animate?.parentElement?.style.setProperty("--Duration", `${duration ? duration : "1"}s`);
         const scrollHandler = () => {
             if (isElementInViewport(animate)) {
                 if (delay){
